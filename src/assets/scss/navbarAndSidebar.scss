@@ -1,0 +1,120 @@
+/* ********************************************************************************************
+    Navbar & Sidebar
+*********************************************************************************************** */
+
+.site-logo {
+  li {
+    .logo {
+      top: 15px;
+      left: 20px;
+    }
+    .brand-text {
+      padding: 20px 0 0 32px;
+    }
+  }
+}
+
+.logo-custom {
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.sidebar.sidebar-left {
+  .sidebar-content {
+    .main-menu {
+      .nav.metismenu {
+        > li {
+          > a {
+            font-size: 0.9rem;
+          }
+        }
+      }
+      padding-bottom: 10px;
+    }
+  }
+  ~ {
+    .content-wrapper {
+      padding-top: 0px;
+    }
+  }
+}
+
+body {
+  .top-toolbar.navbar-desktop {
+    background: #2b343e;
+    .navbar-nav {
+      .nav-item {
+        > a {
+          color: rgba(255, 255, 255, 0.95);
+          i {
+            color: rgba(255, 255, 255, 0.95);
+          }
+        }
+      }
+    }
+  }
+  .aside-toolbar {
+    background-color: #2b343e;
+  }
+  .top-toolbar.navbar-mobile.navbar-tablet {
+    background-color: #2b343e;
+  }
+  .sidebar.sidebar-left {
+    .sidebar-content {
+      .main-menu {
+        .nav.metismenu {
+          li {
+            a {
+              &:hover {
+                color: #f7b500 !important;
+                i {
+                  color: #f7b500 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .top-toolbar {
+    position: fixed;
+    right: 0;
+    left: 0;
+  }
+  .sidebar-left {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    height: calc(100vh - 65px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .sidebar {
+    ~ {
+      .content-wrapper {
+        padding-top: 65px;
+        padding-left: 255px;
+      }
+    }
+  }
+  #app {
+    .content {
+      padding-top: 65px;
+    }
+  }
+}
+
+.mCSB_inside {
+  > .mCSB_container {
+    margin-right: 15px;
+  }
+}
+
+.top-toolbar {
+  .dropdown {
+    .dropdown-menu {
+      top: 100%;
+    }
+  }
+}

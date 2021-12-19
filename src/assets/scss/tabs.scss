@@ -1,0 +1,41 @@
+/* ********************************************************************************************
+    Tabs
+*********************************************************************************************** */
+
+.nav {
+  .nav-item {
+    .nav-link.active {
+      color: #f7b500 !important;
+      border-bottom: solid 1px #f7b500 !important;
+    }
+    .nav-link {
+      &:active {
+        color: #f7b500 !important;
+        border-bottom: solid 1px #f7b500 !important;
+      }
+      // &:hover {
+
+      // }
+    }
+  }
+}
+.nav-tabs.primary-tabs {
+  .nav-item {
+    .nav-link.active.show {
+      color: #f7b500 !important;
+      border-bottom: solid 1px #f7b500 !important;
+    }
+    .nav-link.active {
+      border-bottom: solid 1px #f7b500 !important;
+    }
+  }
+  .nav-item.show {
+    .nav-link {
+      color: #f7b500 !important;
+      border-bottom: solid 1px #f7b500 !important;
+      // &:hover {
+
+      // }
+    }
+  }
+}

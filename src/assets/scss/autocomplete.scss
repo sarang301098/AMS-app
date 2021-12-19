@@ -1,0 +1,18 @@
+/* ********************************************************************************************
+    Autocomplete
+*********************************************************************************************** */
+
+.autocomplete-suggestions {
+  border: 1px solid rgba(120, 141, 180, 0.3);
+  background: #fff;
+  cursor: default;
+  overflow: auto;
+}
+.autocomplete-suggestion {
+  padding: 3px 10px;
+  &:hover {
+    background: #5accca;
+    cursor: pointer;
+    color: #fff;
+  }
+}

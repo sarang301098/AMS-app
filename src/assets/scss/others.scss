@@ -1,0 +1,39 @@
+/* ********************************************************************************************
+    Others
+*********************************************************************************************** */
+
+.inner-filter {
+  select.form-control {
+    &:not([size]) {
+      &:not([multiple]) {
+        height: calc(2.0625rem + 2px);
+      }
+    }
+  }
+  .btn {
+    height: 35px;
+    line-height: 9px;
+  }
+}
+.cms-page {
+  p {
+    font-size: 15px;
+  }
+  ul {
+    li {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  }
+  ol {
+    li {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  }
+}
+.text-underline {
+  text-decoration: underline !important;
+}

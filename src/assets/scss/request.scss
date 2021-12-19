@@ -1,0 +1,12 @@
+.request{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.formContainer select:focus, 
+#floatingInput,
+.formContainer textarea:focus{
+    box-shadow: none;
+}

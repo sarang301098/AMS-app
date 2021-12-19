@@ -1,0 +1,48 @@
+.delete-icon{
+    transform:translateY(1000%);
+    position: absolute;
+    top: 34.7%;
+    right: 45%;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.brand-cards {
+    .card-body {
+        span{
+            transform:translateY(0);
+            pointer-events: none;
+            display: inline-block;
+            transition: all 0.5s ease;
+        }
+    }
+    
+}
+.brand-cards{
+    overflow: hidden;
+}
+
+.brand-cards:hover{
+    background-color: #ff00192d;
+}
+
+.brand-cards:hover {
+    .card-body {
+        span{
+            transform:translateY(-1000%);
+         }
+    }
+}
+
+.brand-cards:hover {
+    .card-body {
+        .delete-icon{
+            display: inline-block;
+            transform:translateY(10%);
+            margin: auto;
+            pointer-events: visible;
+        }
+    }
+}
+

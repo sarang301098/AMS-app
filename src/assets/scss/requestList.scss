@@ -1,0 +1,133 @@
+.req-list-container{
+    background-color: #f6f8fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.pagination-container{
+    width:100%
+}
+
+.page-link{
+    padding-top: 5px!important;
+    margin: 0 .5rem;
+}
+
+.page-link:focus{
+    box-shadow: none;
+}
+
+.status-filter{
+    width:10rem;
+}
+
+.pagination {
+    flex-wrap : wrap !important;
+    margin-left: -13px !important;
+   margin-top: 10px !important;
+}
+
+body #app .content-wrapper .content {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    position: relative;
+    transition: all .3s ease;
+}
+body #app .content {
+    padding-top: 65px;
+}
+.page-header {
+    padding: 30px 30px 0;
+    position: relative;
+}
+
+/**
+Pagination Items
+*/
+
+.table {
+    font-size: .875rem;
+    color: #617182;
+    height: 100%;
+}
+
+.table tbody tr{
+    line-height: 2.4!important;
+}
+
+.custom-select{
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+    background-size: 8px 10px;
+}
+
+// Modal
+
+.close{
+    background: none;
+    border: none;
+}
+
+.calendar-day-view{
+    height: 70px!important;
+    width: 70px!important;
+    border: 1px solid #dee2e6!important;
+    border-radius: 3px!important;
+    text-align: center;
+    font-weight: 400;
+}
+
+.calendar-day-view .month, .calendar-day-view h4 {
+    line-height: 20px!important;
+}
+
+.calendar-day-view h4{
+    margin-top: 4px!important;
+    margin-bottom: 0!important;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.month{
+    font-size: 11px;
+    color: #222;
+    background-color: #EBEEF2;
+    display: block;
+    border-color: #EBEEF2!important;
+    border-width: 2.2px!important;
+    border-bottom: 1.1px solid #dee2e6!important;   
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.day{
+    font-size: 11px;
+    line-height: 16px;
+}
+
+// Badge
+.pending{
+    background-color: rgba(255,193,7, var(--bs-bg-opacity)) !important;
+    --bs-bg-opacity: 1;
+}
+.completed, .low{
+    background-color: rgba(25,135,84, var(--bs-bg-opacity)) !important;
+    --bs-bg-opacity: 1;
+}
+
+.processing, .medium {
+    --bs-bg-opacity: 1;
+    background-color: rgba(13,202,240, var(--bs-bg-opacity)) !important;
+}
+
+.high {
+    --bs-bg-opacity: 1;
+    background-color: rgba(220,53,69,var(--bs-bg-opacity))!important;
+}
+.rejected{
+    background-color: rgba(255,0,24, var(--bs-bg-opacity)) !important;
+    --bs-bg-opacity: 1;
+}

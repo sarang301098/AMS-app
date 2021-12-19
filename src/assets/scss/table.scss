@@ -1,0 +1,200 @@
+/* ********************************************************************************************
+    Table
+*********************************************************************************************** */
+.table-hover {
+  tbody {
+    tr {
+      &:hover {
+        background-color: rgba(231, 241, 253, 0.2);
+      }
+    }
+  }
+}
+
+.table {
+  tbody {
+    th {
+      font-weight: 500;
+    }
+  }
+  td,
+  th {
+    border-top: none;
+    vertical-align: middle;
+  }
+
+  thead {
+    th {
+      vertical-align: middle;
+    }
+  }
+  tr {
+    td {
+      &:first-child {
+        padding-left: 1.25rem;
+      }
+    }
+    th {
+      &:first-child {
+        padding-left: 1.25rem;
+      }
+    }
+  }
+  > thead {
+    > tr {
+      > th {
+        > a {
+          position: relative;
+          color: #617182;
+          &:before {
+            position: absolute;
+            display: block;
+            opacity: 0.5;
+            bottom: -0.15em;
+            margin-right: -25px;
+            content: "\2193";
+            right: 0em;
+          }
+          &:after {
+            position: absolute;
+            display: block;
+            opacity: 0.5;
+            bottom: -0.15em;
+            margin-right: -25px;
+            content: "\2191";
+            right: 0.5em;
+          }
+        }
+        button {
+          background: transparent;
+          border: 0;
+          color: #5accca;
+          width: 100%;
+          text-align: left;
+          cursor: pointer;
+          .caret {
+            float: right;
+            &:before {
+              font: normal normal normal 14px/1 LineAwesome;
+              display: block;
+              font-size: 18px;
+              margin-top: 2px;
+              width: 100%;
+              color: #718eb1;
+              float: right;
+            }
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        button.desc {
+          .caret {
+            &:before {
+              content: "\f308";
+            }
+          }
+        }
+        button.asc {
+          .caret {
+            &:before {
+              content: "\f307";
+            }
+          }
+        }
+      }
+      > th.descending {
+        > a {
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+      > th.ascending {
+        > a {
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+.table-field-status {
+  .dropdown {
+    .dropdown-menu {
+      .dropdown-item {
+        i {
+          vertical-align: inherit;
+          font-size: 11px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  width: 120px !important;
+  text-align: center;
+  .dropdown-menu {
+    width: 150px;
+  }
+}
+.table-field-actions {
+  width: 120px !important;
+  text-align: center;
+  .dropdown-menu {
+    width: 150px;
+  }
+  .dropdown {
+    .dropdown-menu {
+      .dropdown-item {
+        padding: 10px;
+      }
+    }
+  }
+}
+.remove-padding.table {
+  td {
+    &:first-child {
+      padding-left: 0 !important;
+    }
+    &:last-child {
+      padding-right: 0 !important;
+    }
+  }
+  th {
+    &:first-child {
+      padding-left: 0 !important;
+    }
+    &:last-child {
+      padding-right: 0 !important;
+    }
+  }
+}
+
+.table-small-padding.table {
+  > tbody {
+    > tr {
+      > th {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: 13px;
+        font-weight: normal;
+      }
+      > td {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size: 13px;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.pagination {
+  .page-item.active {
+    .page-link {
+      background-color: #f7b500;
+      border-color: #f7b500;
+    }
+  }
+}

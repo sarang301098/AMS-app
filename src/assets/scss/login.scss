@@ -1,0 +1,80 @@
+/* ********************************************************************************************
+    Login
+*********************************************************************************************** */
+.sign-in-form {
+  margin: 10% auto;
+}
+
+.login-box,
+.register-box {
+  width: 100%;
+  max-width: 410px;
+  box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07),
+    0 2px 9px 0 rgba(18, 106, 211, 0.06);
+  border-radius: 10px;
+  margin: 3% auto;
+}
+
+.login-box.custom-login-box {
+  max-width: 610px !important;
+}
+
+.login-logo,
+.register-logo {
+  background: #fff;
+  margin-bottom: 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.login-box-msg,
+.register-box-msg {
+  font-weight: normal;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.login-box-body {
+  color: inherit;
+  padding: 30px 25px;
+  background: #fff;
+  .form-control {
+    background: #fff !important;
+    border-color: #dfe7f3;
+    font-size: 15px;
+    border-radius: 50px;
+    height: 49px;
+    text-align: center;
+    &:focus {
+      background-color: #fff;
+      border-color: #f7b500;
+    }
+  }
+  .btn {
+    font-size: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 50px;
+    margin-top: 10px;
+  }
+  textarea.form-control {
+    border-radius: 7px !important;
+    height: inherit !important;
+  }
+}
+.register-box-body {
+  color: inherit;
+  padding: 30px 25px;
+  background: #fff;
+}
+.login-box-footer {
+  background-color: #fff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0px 25px 20px;
+  font-size: 14px;
+}

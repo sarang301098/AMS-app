@@ -1,0 +1,112 @@
+/* ********************************************************************************************
+    Reset
+*********************************************************************************************** */
+body {
+  margin: 0;
+  font-family: "GT Walsheim", sans-serif;
+  background-color: #f6f8fa;
+}
+
+.sidebar.sidebar-left {
+  .sidebar-content {
+    .main-menu {
+      .nav.metismenu {
+        font-family: "GT Walsheim", sans-serif;
+      }
+    }
+  }
+}
+.site-logo {
+  li {
+    .brand-text {
+      font-family: "GT Walsheim", sans-serif;
+    }
+  }
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.nav.metismenu,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "GT Walsheim", sans-serif;
+}
+
+.h1,
+.h2,
+.h3,
+body,
+h1,
+h2,
+h3,
+html {
+  font-weight: 400;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2b2b2b;
+}
+
+.text-default {
+  color: #9fa4b3 !important;
+}
+
+.text-accent-custom {
+  color: #f7b500 !important;
+}
+
+.o-contain {
+  object-fit: contain;
+}
+
+.o-cover {
+  object-fit: cover;
+}
+
+.w-100p,
+.w-100p ~ .select2-container {
+  width: 100% !important;
+}
+
+a,
+.pointer {
+  cursor: pointer !important;
+}
+
+.actions > li {
+  vertical-align: top;
+}
+
+.tab-pane {
+  .actions.top-right {
+    top: 10px;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+.overflow-auto {
+  overflow: auto;
+}

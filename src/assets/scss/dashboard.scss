@@ -1,0 +1,45 @@
+
+
+
+
+
+
+.page-header h1 {
+    margin: 0;
+    display: inline-block;
+    padding: 7px 20px 7px 0;
+}
+.page-header h1 {
+    font-weight: 600;
+}
+.page-header h1 {
+    margin: 0;
+    display: inline-block;
+    padding: 7px 20px 7px 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: #2b2b2b;
+}
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: .25rem;
+}
+.card {
+    box-shadow: 0 10px 40px 0 rgba(18, 106, 211, 0.07), 0 2px 9px 0 rgba(18, 106, 211, 0.06);
+    border: none;
+    margin-bottom: 1.875rem;
+    transition: all .3s ease;
+}
+.flex-wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+}

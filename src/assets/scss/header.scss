@@ -1,0 +1,230 @@
+/* ********************************************************************************************
+    Page Header & Page Content
+*********************************************************************************************** */
+
+.page-header h1 {
+  font-weight: 600;
+}
+.page-content {
+  padding-top: 20px;
+}
+
+.card.card-tabs .card-header .nav.nav-tabs li a,
+.card.card-tabs .card-header .nav.nav-tabs li button {
+  line-height: 1.3;
+}
+.card.card-tabs .card-header .nav.nav-tabs li:first-child a.active {
+  border-radius: 0.25rem 0 0 0;
+}
+.card.card-tabs .card-header .nav.nav-tabs li a,
+.card.card-tabs .card-header .nav.nav-tabs li button {
+    font-size: .875rem;
+    height: 60px;
+    padding: 1.4rem 1.5rem 1.3rem;
+}
+
+
+.view-badge {
+  vertical-align: 19%;
+  margin-left: 10px;
+  display: inline-block;
+  padding: 4px 10px 4px;
+}
+.main-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.top-toolbar.navbar-desktop .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  height: 4.0625rem;
+}
+.top-toolbar.navbar-desktop .navbar-nav.nav-left {
+  order: 1;
+}
+.top-toolbar.navbar-desktop .navbar-nav.nav-right {
+  margin: 0 0 0 auto;
+  padding: 0;
+  order: 2;
+  position: relative;
+}
+
+.top-toolbar {
+  box-shadow: 0 1px 1px 1px rgba(18, 106, 211, 0.08);
+  display: flex;
+  flex-direction: row;
+  height: 4.0625rem;
+  max-height: 4.0625rem;
+  margin: 0;
+  padding: 0;
+}
+.site-logo {
+  list-style: none;
+}
+
+.top-toolbar .navbar-nav .nav-item.nav-text {
+  padding: 0 17px;
+}
+
+.top-toolbar .navbar-nav .nav-item {
+  list-style: none;
+  min-width: 4.0625rem;
+  height: 4.0625rem;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  outline: 0;
+  transition: all 0.3s ease;
+}
+
+
+
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.top-toolbar .navbar-nav .nav-item > a i {
+  font-size: 1.5rem;
+  position: relative;
+  max-height: 65px;
+}
+
+.top-toolbar .nav-item > a > i {
+  line-height: 3.2;
+}
+.z-index {
+    z-index: 1;
+}
+/* ********************************************************************************************
+    Navbar & Sidebar
+*********************************************************************************************** */
+
+.site-logo li .logo {
+  top: 15px;
+  left: 20px;
+}
+
+.site-logo li .brand-text {
+  padding: 20px 0 0 32px;
+}
+
+.logo-custom {
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.sidebar.sidebar-left .sidebar-content .main-menu .nav.metismenu > li > a {
+  font-size: 0.9rem;
+}
+body .top-toolbar.navbar-desktop {
+  background: #2b343e;
+}
+body .aside-toolbar,
+body .top-toolbar.navbar-mobile.navbar-tablet {
+  background-color: #2b343e;
+}
+body .top-toolbar.navbar-desktop .navbar-nav .nav-item > a,
+body .top-toolbar.navbar-desktop .navbar-nav .nav-item > a i {
+  color: rgba(255, 255, 255, 0.95);
+}
+body
+  .sidebar.sidebar-left
+  .sidebar-content
+  .main-menu
+  .nav.metismenu
+  li
+  a:hover,
+body
+  .sidebar.sidebar-left
+  .sidebar-content
+  .main-menu
+  .nav.metismenu
+  li
+  a:hover
+  i {
+  color: #f7b500 !important;
+}
+.mCSB_inside > .mCSB_container {
+  margin-right: 15px;
+}
+.top-toolbar .dropdown .dropdown-menu {
+  top: 100%;
+}
+body .top-toolbar {
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+body .sidebar-left {
+  position: fixed;
+  top: 65px;
+  left: 0;
+  height: calc(100vh - 65px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+body .sidebar ~ .content-wrapper {
+  padding-top: 65px;
+  padding-left: 255px;
+}
+body #app .content {
+  padding-top: 65px;
+}
+.sidebar.sidebar-left .sidebar-content .main-menu {
+  padding-bottom: 10px;
+}
+.sidebar.sidebar-left ~ .content-wrapper {
+  padding-top: 0px;
+}
+.top-toolbar .navbar-nav .nav-item.nav-text > a {
+  line-height: 4.5;
+  font-size: 0.875rem;
+}
+
+//notifiaction 
+.navbar-nav .dropdown-menu {
+  position: absolute;
+}
+.text-muted {
+  color: #839BB3 !important;
+}
+.small, small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+body .top-toolbar.navbar-desktop .navbar-nav .nav-item >.dropdown button:hover i.icon:after {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-toolbar .navbar-nav .nav-item >.dropdown button:hover i.icon:after {
+  content: "";
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  left: -7.3px;
+  top: -9px;
+  z-index: -1;
+}
+
+.top-toolbar .navbar-nav .nav-item > .dropdown  button {
+  margin-top: 1.3rem;
+  box-shadow: none!important;
+}
+
+
+.top-toolbar .navbar-nav .nav-item > .dropdown  button > i{
+   color: #fff;
+}
+
+.top-toolbar .navbar-nav .nav-item > .dropdown  button{
+  margin-left: 1.2rem;
+}

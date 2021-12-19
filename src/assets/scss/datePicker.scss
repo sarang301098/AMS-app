@@ -1,0 +1,56 @@
+/* ********************************************************************************************
+    Date Picker
+*********************************************************************************************** */
+.DateInput {
+  width: 90px !important;
+}
+
+.DateInput_input {
+  font-size: 12px !important;
+  padding: 0.375rem 0.75rem !important;
+  height: 33px;
+}
+
+.DateInput_input__focused {
+  border-bottom: 2px solid #f7b500 !important;
+}
+
+.DateRangePickerInput__withBorder {
+  border: 1px solid #dfe7f3 !important;
+  border-radius: 0.25rem !important;
+}
+
+.CalendarDay__selected {
+  background: #f7b500 !important;
+  border: 1px double #f7b500 !important;
+  &:active {
+    background: #f7b500 !important;
+    border: 1px double #f7b500 !important;
+  }
+  &:hover {
+    background: #f7b500 !important;
+    border: 1px double #f7b500 !important;
+  }
+}
+
+.CalendarDay__selected_span {
+  background: #f7b50080 !important;
+  border: 1px double #f7b50080 !important;
+}
+.CalendarDay__hovered_span {
+  background: #f7b50080 !important;
+  border: 1px double #f7b50080 !important;
+  color: #484848 !important;
+  &:hover {
+    background: #f7b50080 !important;
+    border: 1px double #f7b50080 !important;
+    color: #484848 !important;
+  }
+}
+
+.DateRangePickerInput_arrow_svg {
+  height: 19px !important;
+  width: 19px !important;
+  margin-top: -3px;
+  margin-left: -3px;
+}

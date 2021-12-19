@@ -1,0 +1,35 @@
+/* ********************************************************************************************
+    Accordion
+*********************************************************************************************** */
+
+.accordion {
+  > .card {
+    > .card-header {
+      .btn-link {
+        padding: 6px 125px 6px 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        &:after {
+          right: 8.5%;
+          top: 50%;
+        }
+      }
+    }
+  }
+}
+
+.assign-timeslot.accordion {
+  > .card {
+    > .card-header {
+      .btn-link {
+        padding: 6px 20px 6px 20px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        &:after {
+          right: 2.5%;
+          top: 50%;
+        }
+      }
+    }
+  }
+}

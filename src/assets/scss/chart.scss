@@ -1,0 +1,47 @@
+/* ********************************************************************************************
+    Chart
+*********************************************************************************************** */
+.pie-chart-legend {
+  .table {
+    font-size: 16px;
+    margin: 0px auto;
+    max-width: 340px;
+    white-space: nowrap;
+    .colorbox {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      display: inline-block;
+      vertical-align: 0px;
+      margin-right: 10px;
+    }
+    .value {
+      font-weight: 600;
+      color: #525e70;
+    }
+  }
+}
+.chart-legend {
+  ul {
+    > li {
+      > span {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        display: inline-block;
+        vertical-align: 0px;
+        margin-right: 10px;
+        margin-right: 10px;
+      }
+    }
+    list-style: none;
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    float: right;
+    li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+}

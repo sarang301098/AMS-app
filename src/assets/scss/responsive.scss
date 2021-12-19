@@ -1,0 +1,277 @@
+/* ********************************************************************************************
+    Design for a width of 768px and above
+*********************************************************************************************** */
+
+@media only screen and (min-width: 768px) {
+  /* SM - Floating
+      ======================================================================================= */
+  .pull-sm-left {
+    float: left !important;
+  }
+  .pull-sm-right {
+    float: right !important;
+  }
+  .text-sm-left {
+    text-align: left !important;
+  }
+  .text-sm-right {
+    text-align: right !important;
+  }
+}
+
+/* ********************************************************************************************
+    Design for a width of 992px and above
+*********************************************************************************************** */
+
+@media only screen and (min-width: 992px) {
+  /* MD - Floating
+      ======================================================================================= */
+
+  .pull-md-left {
+    float: left !important;
+  }
+  .pull-md-right {
+    float: right !important;
+  }
+  .text-sm-left {
+    text-align: left !important;
+  }
+  .text-md-right {
+    text-align: right !important;
+  }
+}
+
+/* ********************************************************************************************
+    Design for a width of 1200px and above
+*********************************************************************************************** */
+
+@media only screen and (min-width: 1200px) {
+}
+
+/* ********************************************************************************************
+    Design for a width of 1400px and above
+*********************************************************************************************** */
+
+@media only screen and (min-width: 1380px) {
+}
+
+/* ********************************************************************************************
+    Design for a width of 1400px and above
+*********************************************************************************************** */
+
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
+}
+
+/* ********************************************************************************************
+    Design for a width of 992px and below
+*********************************************************************************************** */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* ********************************************************************************************
+    Design for a width of 992px and below
+*********************************************************************************************** */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* ********************************************************************************************
+    Design for a width of 1024px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 1024px) {
+}
+
+/* ********************************************************************************************
+    Design for a width of 991px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 991px) {
+  body {
+    .sidebar {
+      ~ {
+        .content-wrapper {
+          padding-left: 0px;
+        }
+      }
+    }
+  }
+}
+
+/* ********************************************************************************************
+    Design for a width of 767px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 767px) {
+  .log-in .btn-success {
+    height: 40px !important;
+    font-size: 16px !important;
+    padding: 8px 10px !important;
+  }
+  .m-b-90 {
+    margin-bottom: 40px;
+  }
+  .tab-pane .actions {
+    position: relative !important;
+  }
+  .tab-pane .actions.top-right {
+    right: 0px !important;
+  }
+}
+
+/* ********************************************************************************************
+    Design for a width of 576px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 576px) {
+  .wizard-steps-panel {
+    height: 12.5em;
+    .step-number {
+      .font-16 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .wizard-steps-panel.steps-quantity-3 {
+    .step-number {
+      width: 44%;
+    }
+  }
+
+  .wizard-steps-panel.steps-quantity-4 {
+    .step-number {
+      width: 38%;
+    }
+  }
+
+  .d-flex,
+  .media {
+    flex-wrap: wrap !important;
+  }
+
+  .pagination {
+    flex-wrap: wrap !important;
+    margin-left: -13px !important;
+    margin-top: 10px !important;
+  }
+
+  .d-flex.align-items-center {
+    .m-l-10 {
+      margin-bottom: 8px !important;
+    }
+  }
+
+  .actions.top-right {
+    li {
+      margin-bottom: 8px !important;
+    }
+    .m-l-10 {
+      .input-group {
+        width: 270px !important;
+      }
+    }
+    .ml-0 {
+      .input-group {
+        width: 270px !important;
+      }
+    }
+  }
+
+  .left-form-content {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+
+  .accordion {
+    > .card {
+      > .card-header {
+        .btn-link {
+          padding: 6px 32px 5px 20px;
+        }
+        height: 70px !important;
+        white-space: normal !important;
+      }
+    }
+  }
+  .page-content {
+    padding: 15px !important;
+  }
+  .page-header {
+    padding: 15px 15px 0;
+  }
+}
+
+/* ********************************************************************************************
+    Design for a width of 520px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 520px) {
+}
+
+/* ********************************************************************************************
+    Design for a width of 520px and below
+*********************************************************************************************** */
+
+@media only screen and (min-width: 480px) and (max-width: 520px) {
+}
+
+/* ********************************************************************************************
+    Design for a width of 479px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 479px) {
+  .manage-box {
+    margin-bottom: 20px;
+  }
+  .manage-content {
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .site-logo {
+    li {
+      .brand-text {
+        padding: 20px 0 0 0px;
+      }
+    }
+  }
+  .wizard-steps-panel {
+    height: 17em;
+  }
+  .box-responsive {
+    width: 120px !important;
+  }
+  .input-group.mb-3 {
+    width: 250px !important;
+  }
+  .accordion {
+    > .card {
+      > .card-header {
+        height: 90px !important;
+        white-space: normal !important;
+        .btn-link {
+          height: 90px !important;
+          white-space: normal !important;
+        }
+      }
+    }
+  }
+}
+
+/* ********************************************************************************************
+    Design for a width of 380px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 380px) {
+}
+
+/* ********************************************************************************************
+    Design for a width of 320px and below
+*********************************************************************************************** */
+
+@media only screen and (max-width: 320px) {
+}
