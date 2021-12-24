@@ -3,7 +3,7 @@ import { Middleware, MiddlewareAPI, Dispatch, AnyAction, Action } from "redux";
 import store from "../store/store";
 
 export const API = axios.create({
-  baseURL: "http://localhost:3333",
+  baseURL: "https://backapi-ams.herokuapp.com",
 });
 
 /**
