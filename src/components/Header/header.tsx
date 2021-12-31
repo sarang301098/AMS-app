@@ -176,6 +176,11 @@ export default function Header() {
                   <span>{t("users")}</span>
                 </Link>
               </li>
+              <li className="nav-item nav-text d-none d-lg-block">
+                <Link to="/admin/report">
+                  <span>Report</span>
+                </Link>
+              </li>
             </>
           )}
         </ul>

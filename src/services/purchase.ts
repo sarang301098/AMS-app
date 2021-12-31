@@ -31,8 +31,17 @@ export const purchaseEntryApi = (
  * @param brandId
  * @returns
  */
-export const getPurchaseApi = (page: number, perPage: number,inventoryName?:string): Promise<any> => {
-  return API.get("/purchaseEntry", { params: { page, perPage,inventoryName } });
+export const getPurchaseApi = (
+  page: number,
+  perPage: number,
+  inventoryName?: string,
+  isPaginate?: boolean,
+  startDate?: string,
+  endDate?: string
+): Promise<any> => {
+  return API.get("/purchaseEntry", {
+    params: { page, perPage, inventoryName, isPaginate:true, startDate, endDate },
+  });
 };
 
 /**
@@ -46,7 +55,5 @@ export const getInventoryNameApi = (): Promise<any> => {
  * post inventory api call
  */
 export const inventoryNameApi = (values: string): Promise<any> => {
-  console.log(";values api", values);
-
   return API.post("/inventoryName", values);
 };

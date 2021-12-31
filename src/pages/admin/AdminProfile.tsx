@@ -19,6 +19,7 @@ const AdminProfile = () => {
     }
   }, [path, pathname]);
 
+  // throw new Error("Something went wrong!!!")
   return (
     <React.Fragment>
       <div id="app">

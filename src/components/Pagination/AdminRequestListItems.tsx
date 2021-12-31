@@ -98,7 +98,6 @@ const AdminRequestList: React.FC<Prop> = ({
       modelId: "",
     },
     onSubmit: async (values) => {
-      console.log(values);
     },
   });
 

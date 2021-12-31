@@ -1,6 +1,4 @@
 import { action } from "typesafe-actions";
-import { IBrandPayload } from "../brandStore/types";
-import { IModelPayload } from "../modelStore/types";
 import actionTypes from "./action.enum";
 import { RequestPayload } from "./types";
 
@@ -96,14 +94,6 @@ const deleteRequestSuccess = () => action(actionTypes.DELETE_REQUEST_SUCCESS);
  */
 const deleteRequestFailed = () => action(actionTypes.DELETE_REQUEST_FAILED);
 
-
-const getBrandsSuccess = (payload:IBrandPayload) => action(actionTypes.AVAILABLE_BRANDS_SUCCESS, payload)
-
-
-const getModelSuccess = (payload: IModelPayload) =>
-  action(actionTypes.AVAILABLE_MODELS_SUCCESS, payload);
-
-
 export {
   requestPending,
   requestSuccess,
@@ -120,6 +110,4 @@ export {
   deleteRequestSuccess,
   deleteRequestPending,
   deleteRequestFailed,
-  getBrandsSuccess,
-  getModelSuccess
 };

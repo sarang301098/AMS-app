@@ -64,5 +64,4 @@ const Languages = () => {
     </div>
   );
 };
-
 export default Languages;

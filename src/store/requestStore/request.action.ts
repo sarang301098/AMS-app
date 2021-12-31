@@ -4,8 +4,6 @@ import * as actionCreator from "./request.action.creators";
 import * as requestFromServer from "../../services/request";
 import { ReqInitialValues } from "./types";
 import { toast } from "react-toastify";
-import { getBrand } from "../../services/brand";
-import { getModels } from "../../services/models";
 const notifyError = (error: string) => toast.error(error, { theme: "colored" });
 const notifySuccess = (msg: string) => toast.success(msg, { theme: "colored" });
 
@@ -133,37 +131,10 @@ const deleteRequestAction = (
   };
 };
 
-const getBrandsAction = (): ThunkAction<void, {}, {}, AnyAction> => {
-  return (dispatch: ThunkDispatch<{}, {}, AnyAction>) => {
-    return getBrand()
-      .then((res) => {
-        dispatch(actionCreator.getBrandsSuccess(res.data));
-      })
-      .catch(() => {
-        notifyError("Something went wrong.");
-      });
-  };
-};
-
-const getModelAction = (
-  brandId: string
-): ThunkAction<void, {}, {}, AnyAction> => {
-  return (dispatch: ThunkDispatch<{}, {}, AnyAction>) => {
-    return getModels(brandId)
-      .then((res) => {
-        dispatch(actionCreator.getModelSuccess(res.data));
-      })
-      .catch((err) => {
-        notifyError("Something went wrong. Try Again!");
-      });
-  };
-};
 export {
   getRequestsAction,
   newRequestAction,
   getSingleRequestAction,
   updateRequestAction,
   deleteRequestAction,
-  getBrandsAction,
-  getModelAction,
 };

@@ -103,29 +103,6 @@ const requestReducer = (state = initialState, action: IRequestActionTypes) => {
         ...state,
         loading: false,
       };
-    // case actionTypes.AVAILABLE_BRANDS_SUCCESS:
-    //   return {
-    //     ...state,
-    //     loading:false,
-    //     brands: action.payload.brandOptions
-    //   }
-   
-    // case actionTypes.AVAILABLE_MODELS_SUCCESS:
-    //   return {
-    //     ...state,
-    //     loading:false,
-    //     models: action.payload.modelOptions
-    //   }
-    // case actionTypes.CHECK_AVAILABILITY_SUCCESS:
-    //   return {
-    //     ...state,
-    //     inventoryAvailable:true
-    //   }
-    // case actionTypes.CHECK_AVAILABILITY_FAILED:
-    //   return {
-    //     ...state,
-    //     inventoryAvailable:false
-    //   }
     default:
       return state;
   }

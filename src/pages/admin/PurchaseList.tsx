@@ -2,16 +2,31 @@ import React, { useEffect, useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 
 import PurchasePagination from "../../components/Pagination/PurchasePagination";
 import PurchaseListItems from "../../components/Pagination/PurchaseListItems";
 import { getPurchaseActionThunk } from "../../store/purchases/purchase.actions.async";
+import { getPurchaseApi } from "../../services/purchase";
 import RootState from "../../store/types";
+import { DateRange } from "react-date-range";
+import { CSVLink } from "react-csv";
+import moment from "moment";
 
 const pageCount = 1;
 
 const PurchaseList: React.FC = () => {
+  const [showDate, setShowDate] = useState(false);
+  const [state, setState]: any = useState([
+    {
+      startDate: new Date(),
+      endDate: null,
+      key: "selection",
+    },
+  ]);
+  const showDatePicker = () => {
+    setShowDate((show) => !show);
+  };
   const [itemsPerPage, setItemsPerPage] = useState(10);
   const dispatch = useDispatch();
   const { t } = useTranslation();
@@ -21,6 +36,19 @@ const PurchaseList: React.FC = () => {
   );
   const [enteredFilter, setEnteredFilter] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
+  const [data, setData] = useState([]);
+  const headers = [
+    { label: "id", key: "_id" },
+    { label: "Brand_Id", key: "brandId" },
+    { label: "Purchase_Date", key: "purchasedDate" },
+    { label: "Units", key: "units" },
+    { label: "SingleUnitAmount", key: "singleUnitAmount" },
+    { label: "TotalAmount", key: "totalAmount" },
+    { label: "InventoryName", key: "inventoryName" },
+    { label: "ModelId", key: "modelId" },
+    { label: "CreatedAt", key: "createdAt" },
+    { label: "UpdatedAt", key: "updatedAt" },
+  ];
 
   useEffect(() => {
     fetchPurchases();
@@ -46,6 +74,34 @@ const PurchaseList: React.FC = () => {
 
   const fetchPurchases = (page?: number) =>
     dispatch(getPurchaseActionThunk(page || pageCount, itemsPerPage));
+
+  const helper = (startDate: string, endDate: string) => {
+    return `Peerbits Purchases (${moment(startDate).format(
+      "MM/dd/yyyy"
+    )}-${moment(endDate).format("MM/dd/yyyy")})`;
+  };
+  const csvReport = {
+    filename: helper(state.startDate, state.endDate),
+    headers: headers,
+    data: data,
+  };
+
+  const handleClick = () => {
+    getPurchaseApi(
+      pageCount,
+      itemsPerPage,
+      enteredFilter,
+      true,
+      state.startDate,
+      state.endDate
+    )
+      .then((res) => {
+        setData(res.data.purchaseEntries);
+      })
+      .catch(() => {
+        toast.error("Something went wrong");
+      });
+  };
 
   return (
     <div id="app">
@@ -82,6 +138,7 @@ const PurchaseList: React.FC = () => {
                           <option value={10}>10</option>
                         </select>
                       </div>
+
                       <div className="d-flex align-items-center">
                         <input
                           className="form-control"
@@ -96,6 +153,46 @@ const PurchaseList: React.FC = () => {
                               {t("newPurchase")}
                             </button>
                           </Link>
+                        </div>
+
+                        {showDate && (
+                          <div
+                            style={{
+                              position: "absolute",
+                              right: "0",
+                              top: "60px",
+                            }}
+                          >
+                            <DateRange
+                              editableDateInputs={true}
+                              onChange={(item) => {
+                                setState([item.selection]);
+                                handleClick();
+                              }}
+                              moveRangeOnFirstSelection={false}
+                              ranges={state}
+                            />
+                          </div>
+                        )}
+                        <div className="m-l-10">
+                          <button
+                            type="button"
+                            className="btn btn-success"
+                            onClick={showDatePicker}
+                          >
+                            Select Date
+                          </button>
+                        </div>
+                        <div>
+                          <CSVLink {...csvReport}>
+                            <button
+                              type="button"
+                              className="btn btn-success"
+                              style={{ marginLeft: "10px" }}
+                            >
+                              Download CSV
+                            </button>
+                          </CSVLink>
                         </div>
                       </div>
                     </div>

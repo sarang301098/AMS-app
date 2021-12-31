@@ -44,16 +44,42 @@ const updateAdminRequestSuccess = () =>
 const updateAdminRequestFailed = () =>
   action(actionTypes.UPDATE_ADMIN_REQUEST_FAILED);
 
-const checkAvailableBrands = (payload: object) => action(actionTypes.CHECK_AVAILABLE_BRANDS, payload)
+/**
+ * checkAvailableBrands action creator
+ * @param payload
+ * @returns
+ */
+const checkAvailableBrands = (payload: object) =>
+  action(actionTypes.CHECK_AVAILABLE_BRANDS, payload);
 
-const checkAvailableModels = (payload:object) => action(actionTypes.CHECK_AVAILABLE_MODELS, payload)
+/**
+ * checkAvailableModels action creator
+ * @param payload
+ * @returns
+ */
+const checkAvailableModels = (payload: object) =>
+  action(actionTypes.CHECK_AVAILABLE_MODELS, payload);
 
+/**
+ * checkAvailabilitySuccess action creator
+ * @param payload
+ * @returns
+ */
 const checkAvailabilitySuccess = (payload: Record<string, string>) =>
   action(actionTypes.CHECK_AVAILABILITY_SUCCESS, payload);
+
+/**
+ * checkAvailabilityFailed action creator
+ * @returns
+ */
 const checkAvailabilityFailed = () =>
   action(actionTypes.CHECK_AVAILABILITY_FAILED);
 
-const assignInventory = () => action(actionTypes.RESET)
+/**
+ * assignInventory
+ * @returns
+ */
+const assignInventory = () => action(actionTypes.RESET);
 
 export {
   getAdminRequestPending,
@@ -66,5 +92,5 @@ export {
   checkAvailabilityFailed,
   checkAvailableBrands,
   checkAvailableModels,
-  assignInventory
+  assignInventory,
 };

@@ -168,7 +168,6 @@ const Models = () => {
                         {brandOptions && brandOptions.length > 0 ? (
                           <div style={{ width: "20rem" }}>
                             <Select
-                            isClearable
                               defaultValue={brandOptions && brandOptions[0]}
                               placeholder="Brands"
                               options={brandOptions}
@@ -231,7 +230,7 @@ const Models = () => {
                             >
                               <ScaleLoader color="#F7B500" />
                             </div>
-                          )}
+                          )} 
                         </div>
                       )}
                     </div>

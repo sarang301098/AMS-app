@@ -58,6 +58,12 @@ const updateAdminRequestAction = (
   };
 };
 
+/**
+ * assignInventoryAction api call thunk
+ * @param inventoryDetailId 
+ * @param requestId 
+ * @returns 
+ */
 const assignInventoryAction = (
   inventoryDetailId: string,
   requestId: string
@@ -76,6 +82,11 @@ const assignInventoryAction = (
   };
 };
 
+/**
+ * checkAvailableBrandAction api call thunk
+ * @param inventoryName 
+ * @returns 
+ */
 const checkAvailableBrandAction = (inventoryName:string):ThunkAction<void, {}, {}, AnyAction> => {
   return (dispatch: ThunkDispatch<{}, {}, AnyAction>) => {
     return requests
@@ -91,6 +102,12 @@ const checkAvailableBrandAction = (inventoryName:string):ThunkAction<void, {}, {
   }
 }
 
+/**
+ * checkAvailableModelAction api call thunk
+ * @param inventoryName 
+ * @param brandId 
+ * @returns 
+ */
 const checkAvailableModelAction = (inventoryName:string, brandId:string):ThunkAction<void, {}, {}, AnyAction> => {
   return (dispatch: ThunkDispatch<{}, {}, AnyAction>) => {
     return requests
@@ -100,8 +117,13 @@ const checkAvailableModelAction = (inventoryName:string, brandId:string):ThunkAc
   }
 }
 
-
-
+/**
+ * checkAvailabilityAction api call thunk
+ * @param brandId 
+ * @param modelId 
+ * @param inventoryName 
+ * @returns 
+ */
 const checkAvailabilityAction = (
   brandId: string,
   modelId: string,

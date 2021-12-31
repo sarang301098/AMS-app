@@ -2,7 +2,7 @@ import { IDashboardActionTypes, IDashboardState } from "./types";
 import actionTypes from "./action.enum";
 
 const AppState: IDashboardState = {
-  dashboardData: { userDashboardInventory: [], userDashboardRequest: { completed: 0, rejected: 0 } },
+  dashboardData: {userDashboardInventory:[],userDashboardRequest:{completed:0,rejected:0}},
   loading: false,
 };
 const dashboradReducer = (state = AppState, action: IDashboardActionTypes) => {

@@ -164,7 +164,6 @@ const NotificationItems: React.FC<Prop> = ({
       } else {
         checkedNotifications=[]
       }
-      console.log(checkedNotifications);
       setNotifications(tempUser);
       setSelectedNotifications(checkedNotifications);
       
@@ -182,7 +181,6 @@ const NotificationItems: React.FC<Prop> = ({
           : notification
       );
       setSelectedNotifications(selectedNotification);
-      console.log(selectedNotification)
       setNotifications(tempUser);
     }
   };
