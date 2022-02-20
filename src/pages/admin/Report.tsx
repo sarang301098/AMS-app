@@ -56,7 +56,6 @@ const Report: React.FC = () => {
   const downloadCsv = async (start: Date, end: Date) => {
     try {
       const getAllReportData = await getReport(start, end);
-
       setDownloadData(
         (getAllReportData &&
           getAllReportData.data &&
@@ -76,6 +75,7 @@ const Report: React.FC = () => {
     fetchReport();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [itemsPerPage, date]);
+
   const fetchReport = (page?: number) =>
     dispatch(
       getReportDataAction(

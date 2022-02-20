@@ -59,7 +59,6 @@ export const AppRoutes = () => {
           path="/reset-Password"
           exact
         />
-
         <PrivateRoute component={Dashboard} path="/dashboard" exact />
         <PrivateRoute
           component={ChangePassword}

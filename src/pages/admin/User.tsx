@@ -25,8 +25,8 @@ const User = () => {
       .required(`${t("emailRequired")}`),
     type: Yup.string().required(`Please select user type`),
     password: Yup.string()
-      .min(6, "Too Short")
-      .required(`${t("passwordRequired")}`),
+      .min(6, "Password is too Short")
+      .required(`${t("password is required")}`),
   });
 
   const formik = useFormik({

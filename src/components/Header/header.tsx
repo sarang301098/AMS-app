@@ -17,7 +17,7 @@ import {
   markAsReadAdminNotificationAction,
 } from "../../store/adminNotificationStore/admin.notification.action.async";
 import { IAdminNotificationPayload } from "../../store/adminNotificationStore/types";
-import Logo from "../../assets/img/peerbits-logo.png";
+import Logo from "../../assets/img/logo.png";
 
 export default function Header() {
   const { push } = useHistory();

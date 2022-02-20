@@ -30,9 +30,9 @@ const Models = () => {
   const loading = useSelector(
     (state: RootState) => state.model.loading || false
   );
+  const [modelId, setModelId] = useState("");
   const [showAddModal, setShowAddModal] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
-  const [modelId, setModelId] = useState("");
   const [selectedBrand, setSelectedBrand] = useState({ label: "", value: "" });
 
   useEffect(() => {

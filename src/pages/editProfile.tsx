@@ -7,6 +7,7 @@ const EditProfile = () => {
   const handleRedirectToProfile = () => {
     history.push("/profile");
   };
+  
   return (
     <React.Fragment>
       <Header />

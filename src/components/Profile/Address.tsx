@@ -12,6 +12,7 @@ import RootState from "../../store/types";
 export default function Address() {
   const dispatch = useDispatch();
   const { t } = useTranslation();
+
   const AddressSchema = Yup.object().shape({
     area: Yup.string().required("Area is required"),
     city: Yup.string().required("City is required"),
@@ -44,7 +45,9 @@ export default function Address() {
       );
     },
   });
+
   const { errors, touched } = formik;
+
   return (
     <React.Fragment>
       <ToastContainer />

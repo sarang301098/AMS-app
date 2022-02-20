@@ -8,8 +8,8 @@ import RootState from "../../store/types";
 export default function Overview() {
   const overViewData = useSelector((state: RootState) => state.user.userData!);
   const { t } = useTranslation();
-  const general = overViewData.general;
-  const contact = overViewData.contact;
+  const general = overViewData.general || {};
+  const contact = overViewData.contact || {};
   const address = Object.values(overViewData.address).join(" ");
   return (
     <div>
@@ -23,39 +23,39 @@ export default function Overview() {
                   <li className="mb-3 col-md-6">
                     <label className="text-muted mb-1">{t("firstName")}</label>
                     <br />
-                    {general["fName"]}
+                    {general.fName || 'N/A'}
                   </li>
                   <li className="mb-3 col-md-6">
                     <label className="text-muted mb-1">{t("middleName")}</label>
                     <br />
-                    {general["mName"]}
+                    {general.mName || 'N/A'}
                   </li>
                   <li className="mb-3 col-md-6">
                     <label className="text-muted mb-1">{t("lastName")}</label>
                     <br />
-                    {general["lName"]}
+                    {general.lName || 'N/A'}
                   </li>
                   <li className="mb-3 col-md-6">
                     <label className="text-muted mb-1">{t("gender")}</label>
                     <br />
-                    {general["gender"]}
+                    {general.gender || 'N/A'}
                   </li>
                   <li className="mb-3 col-md-6">
                     <label className="text-muted mb-1">{t("dob")}</label>
                     <br />
-                    {moment(general["dob"]).format("DD-MM-YYYY")}
+                    {moment(general.dob).format("DD-MM-YYYY")}
                   </li>
                   <li className="mb-3 col-md-6">
                     <label className="text-muted mb-1">{t("workEmail")}</label>
                     <br />
-                    {contact["workEmail"]}
+                    {contact.workEmail || 'N/A'}
                   </li>
                   <li className="mb-3 col-md-6">
                     <label className="text-muted mb-1">
                       {t("personalEmail")}
                     </label>
                     <br />
-                    {contact["personalEmail"]}
+                    {contact.personalEmail || 'N/A'}
                   </li>
                   <li className="mb-3 col-md-6">
                     <label className="text-muted mb-1">{t("workPhone")}</label>
