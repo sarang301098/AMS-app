@@ -124,7 +124,8 @@ export default function Header() {
                 style={{
                   width: "100px",
                   marginLeft: "25px",
-                  marginTop: "10px",
+                  marginTop: "5px",
+                  height: "33px",
                 }}
               />
             </Link>

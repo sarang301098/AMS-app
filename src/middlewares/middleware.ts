@@ -3,7 +3,7 @@ import axios from "axios";
 import store from "../store/store";
 
 export const API = axios.create({
-  baseURL: "https://amsapi.sarangpatel.live/",  //https://backapi-ams.herokuapp.com
+  baseURL: "http://localhost:3333" || "https://amsapi.sarangpatel.live/",  //https://backapi-ams.herokuapp.com
 });
 
 /**
